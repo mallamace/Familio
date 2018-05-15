@@ -44,12 +44,12 @@ public class TrackAdapter extends ArrayAdapter<Track> {
         numberTextView.setText(currentTrackFlavor.getTrackFileName());
 
 
-//        TextView catNateTxt = (TextView) findViewById(R.id.catNateTxt);
-//        catNateTxt.setOnClickListener(new View.OnClickListener() {
+//        TextView categoryItem = (TextView) findViewById(R.id.categoryItem);
+//        categoryItem.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Intent categoryIntent = new Intent(MainActivity.this, CategoryActivity.class);
-//                categoryIntent.putExtra("keyName",2);
+//                Intent categoryIntent = new Intent(MainActivity.this, TrackActivity.class);
+//                categoryIntent.putExtra("catKeyName",2);
 //                startActivity(categoryIntent);
 //            }
 //        });
