@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/catGrandfatherTxt"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/colorMenuFirst"
+           style="@style/MenuStyle"
+           android:text="Grandfather Family Stories"
+           />
+
+        <TextView
+            android:id="@+id/catAshlynnTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMenuSecond"
+            style="@style/MenuStyle"
+            android:text="Aslynn Audio Clips"
+            />
+
+        <TextView
+            android:id="@+id/catNateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMenuThird"
+            style="@style/MenuStyle"
+            android:text="Nate Audio Experiments"
+            />
+
+        <TextView
+            android:id="@+id/catRandomTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMenuFourth"
+            style="@style/MenuStyle"
+            android:text="Random Audio"
+            />
+
+        <TextView
+            android:id="@+id/catDibeneTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMenuFifth"
+            style="@style/MenuStyle"
+            android:text="U-Radio with Dr. Di Bene"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

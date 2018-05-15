@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorMenuFirst">#5E35B1</color> <!--purple-->
+    <color name="colorMenuSecond">#00838F</color> <!--aqua-->
+    <color name="colorMenuThird">#BF360C</color> <!--orange-->
+    <color name="colorMenuFourth">#558B2F</color> <!--green-->
+    <color name="colorMenuFifth">#b71c1c</color> <!--red-->
+
+    <color name="listColorFirst">#C5CAE9</color> <!--purple-->
+    <color name="listColorSecond">#9FA8DA</color> <!--purple-->
+
+</resources>
