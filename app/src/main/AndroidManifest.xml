@@ -19,25 +19,13 @@
 
         <activity
             android:name=".CategoryActivity"
-            android:label="Category Activity"
-            android:parentActivityName=".MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CategoryActivity" />
+            android:label="Category Activity">
         </activity>
 
 
         <activity
             android:name=".TrackActivity"
-            android:label="Track Activity"
-            android:parentActivityName=".CategoryActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TrackActivity" />
+            android:label="Track Activity">
         </activity>
     </application>
 

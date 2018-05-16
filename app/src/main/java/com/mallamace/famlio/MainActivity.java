@@ -13,8 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        TextView catGrandfatherTxt = (TextView) findViewById(R.id.catGrandfatherTxt);
+        /**
+         * The following onClickListeners are ready to take a selection
+         * from any of the displayed TextView and serve up categoryIntent
+         * We are tracking based on "keyName" to help us determine which
+         * TextView was selected.
+         */
+        TextView catGrandfatherTxt = findViewById(R.id.catGrandfatherTxt);
         catGrandfatherTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView catAshlynnTxt = (TextView) findViewById(R.id.catAshlynnTxt);
+        TextView catAshlynnTxt = findViewById(R.id.catAshlynnTxt);
         catAshlynnTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        TextView catNateTxt = (TextView) findViewById(R.id.catNateTxt);
+        TextView catNateTxt = findViewById(R.id.catNateTxt);
         catNateTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,9 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        TextView catRandomTxt = (TextView) findViewById(R.id.catRandomTxt);
+        TextView catRandomTxt = findViewById(R.id.catRandomTxt);
         catRandomTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        TextView catDibeneTxt = (TextView) findViewById(R.id.catDibeneTxt);
+        TextView catDibeneTxt = findViewById(R.id.catDibeneTxt);
         catDibeneTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,8 +68,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(categoryIntent);
             }
         });
-
-
-
     }
 }

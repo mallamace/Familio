@@ -4,20 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="445dp"
+            android:layout_height="match_parent"
             android:background="@drawable/trackashlynn"
+            android:scaleY="1"
+            android:scaleX="1.3"
             android:scaleType="centerInside"/>
-
 
         <TextView
             android:id="@+id/trackTitle"
@@ -29,8 +26,6 @@
             android:textSize="29dp"
             android:text="Ashlynn Text"/>
 
-
-
         <TextView
             android:id="@+id/trackFile"
             android:layout_width="match_parent"
@@ -41,7 +36,20 @@
             android:textSize="15dp"
             android:text="File Text"/>
 
+        <SeekBar
+            android:id="@+id/songProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/playerBox"
+            android:progressDrawable="@drawable/seekbar"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"/>
+
         <LinearLayout
+            android:id="@+id/playerBox"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
@@ -64,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/playbutton"
                 android:layout_weight="1"
-                android:padding="8dp"
+                android:padding="6dp"
                 android:scaleType="centerInside"
                 android:onClick="togglePlay"/>
 
@@ -77,11 +85,6 @@
                 android:scaleType="centerInside"/>
 
         </LinearLayout>
-
-
-
-
-
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
