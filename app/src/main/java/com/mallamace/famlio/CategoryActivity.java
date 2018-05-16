@@ -8,12 +8,17 @@ import java.util.ArrayList;
 
 public class CategoryActivity extends AppCompatActivity {
 
+
+    private int data;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.category_list);
-        int data = getIntent().getExtras().getInt("keyName");
+
+            data = getIntent().getExtras().getInt("keyName");
+
         String categoryName = "";
 
         switch (data){

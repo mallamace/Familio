@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,11 +58,11 @@ public class TrackAdapter extends ArrayAdapter<Track> {
 
 
 
-
         LinearLayout categoryItem = (LinearLayout) listItemView.findViewById(R.id.categoryItem);
         categoryItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent categoryIntent = new Intent(context, TrackActivity.class);
                 categoryIntent.putExtra("trackTitle",currentTrackTitle);
                 categoryIntent.putExtra("trackFile",currentTrackFile);

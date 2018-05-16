@@ -40,11 +40,5 @@ public class TrackActivity extends AppCompatActivity {
 
         if(playing){ playing = false; playButton.setImageResource(R.drawable.pausebutton);} else {playing = true; playButton.setImageResource(R.drawable.playbutton);}
 
-
-
-
     }
-
-
-
 }
