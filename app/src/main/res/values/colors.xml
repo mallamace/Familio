@@ -13,4 +13,6 @@
     <color name="listColorFirst">#C5CAE9</color> <!--purple-->
     <color name="listColorSecond">#9FA8DA</color> <!--purple-->
 
+    <color name="colorWhite">#FFFFFF</color> <!--white-->
+    <color name="colorBlack">#000000</color> <!--black-->
 </resources>

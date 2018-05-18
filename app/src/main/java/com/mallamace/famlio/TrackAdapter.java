@@ -68,7 +68,6 @@ public class TrackAdapter extends ArrayAdapter<Track> {
 
                 Intent categoryIntent = new Intent(context, TrackActivity.class);
 
-
                     categoryIntent.putExtra("trackTitle",currentTrackTitle);
                     categoryIntent.putExtra("trackFile",currentTrackFile);
                     getContext().startActivity(categoryIntent);

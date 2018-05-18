@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Famlio</string>
+
+    <string name="valueGrand">grandfather</string>
+    <string name="valueAsh">ashlynn</string>
+    <string name="valueNate">nate</string>
+    <string name="valueRand">random</string>
+    <string name="valueDiBene">dibene</string>
+
+    <string name="trackTitleName">Track Title %1$d</string>
+    <string name="trackFileName">file-%1$s.mp3</string>
+
+    <string name="audioTitle">Audio Title</string>
+    <string name="audioFile">file-name.mp3</string>
+
+    <string name="buttonGrand">Grandfather Family Stories</string>
+    <string name="buttonAsh">Aslynn Audio Clips</string>
+    <string name="buttonNate">Nate Audio Experiments</string>
+    <string name="buttonRand">Random Audio</string>
+    <string name="buttonDiBene">U-Radio with Dr. Di Bene</string>
 </resources>

@@ -13,7 +13,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/trackashlynn"
             android:scaleY="1"
-            android:scaleX="1.3"
+            android:scaleX="1.1"
             android:scaleType="centerInside"/>
 
         <TextView
@@ -22,19 +22,17 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingTop="200dp"
-            android:textColor="#fff"
-            android:textSize="29dp"
-            android:text="Ashlynn Text"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="29sp" />
 
         <TextView
             android:id="@+id/trackFile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/trackTitle"
-            android:textColor="#fff"
+            android:textColor="@color/colorWhite"
             android:gravity="center"
-            android:textSize="15dp"
-            android:text="File Text"/>
+            android:textSize="15sp" />
 
         <SeekBar
             android:id="@+id/songProgressBar"
@@ -54,14 +52,14 @@
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:padding="15dp"
-            android:background="#000"
+            android:background="@color/colorBlack"
             android:orientation="horizontal"
             android:layout_weight="3">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/leftarrow"
+                android:src="@drawable/arrowleft"
                 android:layout_weight="1"
                 android:padding="10dp"
                 android:scaleType="centerInside"/>
@@ -73,18 +71,16 @@
                 android:src="@drawable/playbutton"
                 android:layout_weight="1"
                 android:padding="6dp"
-                android:scaleType="centerInside"
-                android:onClick="togglePlay"/>
+                android:scaleType="centerInside" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/rightarrow"
+                android:src="@drawable/arrowright"
                 android:layout_weight="1"
                 android:padding="10dp"
                 android:scaleType="centerInside"/>
 
         </LinearLayout>
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

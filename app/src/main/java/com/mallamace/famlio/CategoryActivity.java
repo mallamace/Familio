@@ -15,50 +15,28 @@ public class CategoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        ActionBar actionBar = getSupportActionBar();  // allows for in-app back button navigation
-        if (actionBar != null) {
-            actionBar.setHomeButtonEnabled(true);
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
-
         setContentView(R.layout.category_list); // set the layout assigned
 
         data = getIntent().getExtras().getInt("keyName");
         String categoryName = "";
 
         switch (data){ // determine from getExtras() "keyName" which category values we should use.
-            case 0: categoryName = "grandfather"; break;
-            case 1: categoryName = "ashlynn"; break;
-            case 2: categoryName = "nate"; break;
-            case 3: categoryName = "random"; break;
-            case 4: categoryName = "dibene"; break;
+            case 0: categoryName = getString(R.string.valueGrand); break;
+            case 1: categoryName = getString(R.string.valueAsh); break;
+            case 2: categoryName = getString(R.string.valueNate); break;
+            case 3: categoryName = getString(R.string.valueRand); break;
+            case 4: categoryName = getString(R.string.valueDiBene); break;
         }
 
         ArrayList<Track> trackList = new ArrayList<Track>();
 
         for(int i = 0; i<10; i++){ //create a list of tracks
-            trackList.add(new Track("Track Title "+i, "file-"+categoryName+i+".mp3"));
+            trackList.add(new Track(getString(R.string.trackTitleName, i), getString(R.string.trackFileName, categoryName)));
         }
 
         TrackAdapter itemsAdapter = new TrackAdapter(this, trackList);
         ListView listView = findViewById(R.id.catList);
 
         listView.setAdapter(itemsAdapter);
-    }
-
-    /**
-     * You need this method to link back to previous activity when Up Menu arrow selected.
-     * @param item
-     * @return
-     */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
